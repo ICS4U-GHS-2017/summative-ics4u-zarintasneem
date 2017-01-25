@@ -1,20 +1,27 @@
 
 public class Flight {
 
-	String flightNum;
-	int day;
-	int month;
-	int hour;
-	int minute;
-	int year;
-	Seat[] seats;
+	int flightNum;
+	Seat[] seats = new Seat [10];
 	
-	public Flight(int d, int mo, int yr, int h, int m, Seat[] seat){
-		this.day = d;
-		this.month = mo;
-		this.year = yr;
-		this.hour = h;
-		this.minute = m;
-		this.flightNum = yr + mo + yr + h + m + " ";
+	public Flight(int fNum, Seat[] seat){
+		
+		this.flightNum = fNum;
+		this.seats = new Seat[10];
 	}
+	
+	public int printFlight(int flightNum){
+		
+		for (int i = 0; i <= 10; i++){
+			if (seats[i].passenger == null) {
+				
+			}
+		}
+		
+		
+		return flightNum;
+	}
+	
+	
+	 
 }
